@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/BlancoC.ico">
+    <title>CRUANPA</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="card_marca.css">
+    <script src="https://kit.fontawesome.com/8e785e1f4e.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <img src="imagenes/cruanpaLogo.png" alt="">
+            <section class="contactUs">
+                <a href="mailto:cruanpa.ventas@gmail.com" target="_blank"><span class="fa-solid fa-envelope"></span></a>
+                <a href="https://wa.me/5219213917777" target="_blank"> <span class="fa-brands fa-whatsapp"></span> </a>
+            </section>
+
+            <h3>En Cruanpa Comercializadora, nos dedicamos a proporcionar equipo de protección personal para la
+                seguridad laboral.
+                Ofrecemos una amplia variedad de equipos de protección industrial, con cotizaciones personalizadas y
+                entregas directas.
+                Además, brindamos un servicio de bordado y serigrafiado para personalizar tus
+                overoles y mejorar la imagen corporativa. </h3>
+
+            <h1>Nuestros servicios</h1>
+            <section class="servicios">
+                <ul>
+                    <li>
+                        <h2> <span class="fa-solid fa-helmet-safety"></span> Venta de equipos de seguridad industrial
+                        </h2>
+                        <p>Ofrecemos una amplia gama de equipos de protección, incluyendo overoles, cascos, guantes,
+                            lentes y más, todo diseñado para garantizar la seguridad en el trabajo.</p>
+                    </li>
+
+                    <li>
+                        <h2> <span class="fa-solid fa-file-invoice-dollar"></span> Cotización personalizada</h2>
+                        <p>Nos especializamos en proporcionar cotizaciones detalladas y personalizadas para cubrir las
+                            necesidades específicas de seguridad de tu empresa</p>
+                    </li>
+
+                    <li>
+                        <h2> <span class="fa-solid fa-palette"></span> Servicio de bordado y serigrafiado</h2>
+                        <p>Ofrecemos el servicio de bordado y serigrafiado para personalizar tus overoles con el nombre
+                            de tu empresa o cualquier otro diseño que desees, agregando un toque profesional y único a
+                            tu equipo de trabajo</p>
+                    </li>
+
+                    <li>
+                        <h2> <span class="fa-solid fa-truck-fast"></span> Entrega directamente a tu empresa</h2>
+                    </li>
+                </ul>
+            </section>
+
+            <h1>Medios de contacto</h1>
+            <section class="contacto">
+                <a href="https://wa.me/5219213917777" target="_blank" id="whatsapp"> 
+                    <span class="fa-brands fa-whatsapp"></span> Whatsapp 
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=61550613068474" target="none" id="facebook">    
+                    <span class="fa-brands fa-facebook"></span> Facebook
+                </a>
+
+                <a href="https://www.instagram.com/cruanpa/?fbclid=IwZXh0bgNhZW0CMTAAAR2lttedQW94iwVgw1cXmix41uwa443F5U-UwCxAlYc95v8AhX0_LkFHt08_aem_Ac0F9HO-phra36SUHLpE8R6bUUAGkNSeS5j4duHN3zPD0PQCFp6sWlGp3ELXjgqX2pH0Zi-bxlbqNNIDCNA2eNt6"
+                    target="none" id="instagram"> 
+                    <span class="fa-brands fa-instagram"></span> Instagram
+                </a>
+
+                <a href="mailto:cruanpa.ventas@gmail.com" target="_blank" id="email">
+                    <span class="fa-solid fa-envelope"></span> Correo Electronico
+                </a>
+
+            </section>
+
+            <h1>Catalogo de marcas</h1>
+            <section class="marcas">
+                <img src="imagenes/marcas/BYLACK.png" alt="BYLACK">
+                <img src="imagenes/marcas/3M.png" alt="3M">
+                <img src="imagenes/marcas/dermacare.png" alt="DermaCare">
+                <img src="imagenes/marcas/msa.png" alt="MSA">
+                <img src="imagenes/marcas/jyrsa.png" alt="JYRSA">
+                <img src="imagenes/marcas/vanvien.png" alt="VANVIEN">
+                <img src="imagenes/marcas/truper.png" alt="TRUPER">
+                <img src="imagenes/marcas/uvex.png" alt="UVEX">
+            </section>
+
+            <button id="btnImprimirPDF">Obtener PDF</button>
+            <script>
+                document.getElementById('btnImprimirPDF').addEventListener('click', function () {
+                    const options = {
+                        margin: 10,
+                        filename: 'CRUANPA.pdf',
+                        image: { type: 'jpeg', quality: 0.98 },
+                        html2canvas: { scale: 2 },
+                        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                    };
+            
+                    const element = document.querySelector('.card');
+                    html2pdf().from(element).set(options).save();
+                });
+            </script>
+            
+        </div>
+    </main>
+</body>
+</html>
