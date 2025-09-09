@@ -1,0 +1,26 @@
+@import 'variables';
+
+.contac-button {
+  display: flex;          
+  align-items: center;
+  justify-content: center;
+  width: 12.5rem;
+  height: 5rem;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: $secondary-color;
+  border: none;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  &:hover {
+    background-color: $accent-color;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}

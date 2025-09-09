@@ -1,112 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imagenes/BlancoC.ico">
+    <meta name="description"
+        content="Cruanpa Comercializadora: venta de equipo de protección industrial (overoles, cascos, guantes, lentes). Cotización personalizada, bordado y serigrafía, entrega directa." />
     <title>CRUANPA</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="card_marca.css">
-    <script src="https://kit.fontawesome.com/8e785e1f4e.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="imagenes/BlancoC.ico">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/8e785e1f4e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header class="header">
+        <img src="imagenes/Logo blanco.png" alt="CRUANPA Comercializadora">
+        <h1>Protegemos lo más importante, <br> tu <span>equipo de trabajo</span> </h1>
+        <p>Venta de equipo de protección personal: overoles, cascos, guantes, lentes y más para garantizar tu seguridad
+            laboral</p>
+        <div class="header-buttons">
+            <a href="mailto:cruanpa.ventas@gmail.com" target="_blank" class="contac-button">
+                <img src="imagenes/social/email 1.svg" alt="Email" />
+            </a>
+
+            <a href="https://wa.me/5219213917777" target="_blank" class="contac-button">
+                <img src="imagenes/social/whatsapp 1.svg" alt="WhatsApp" />
+            </a>
+        </div>
+    </header>
+
     <main>
-        <div class="card">
-            <img src="imagenes/cruanpaLogo.png" alt="">
-            <section class="contactUs">
-                <a href="mailto:cruanpa.ventas@gmail.com" target="_blank"><span class="fa-solid fa-envelope"></span></a>
-                <a href="https://wa.me/5219213917777" target="_blank"> <span class="fa-brands fa-whatsapp"></span> </a>
-            </section>
+        <section class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="services_list">
 
-            <h3>En Cruanpa Comercializadora, nos dedicamos a proporcionar equipo de protección personal para la
-                seguridad laboral.
-                Ofrecemos una amplia variedad de equipos de protección industrial, con cotizaciones personalizadas y
-                entregas directas.
-                Además, brindamos un servicio de bordado y serigrafiado para personalizar tus
-                overoles y mejorar la imagen corporativa. </h3>
+                <div class="service_item">
+                    <div class="service_item_icon">
+                        <img src="imagenes/casco.svg" alt="Venta de EPP">
+                    </div>
 
-            <h1>Nuestros servicios</h1>
-            <section class="servicios">
-                <ul>
-                    <li>
-                        <h2> <span class="fa-solid fa-helmet-safety"></span> Venta de equipos de seguridad industrial
-                        </h2>
-                        <p>Ofrecemos una amplia gama de equipos de protección, incluyendo overoles, cascos, guantes,
-                            lentes y más, todo diseñado para garantizar la seguridad en el trabajo.</p>
-                    </li>
+                    <strong> Venta de equipos de seguridad industrial </strong>
+                    <span>Overoles, cascos, guantes, lentes y más para tu seguridad laboral</span>
+                </div>
 
-                    <li>
-                        <h2> <span class="fa-solid fa-file-invoice-dollar"></span> Cotización personalizada</h2>
-                        <p>Nos especializamos en proporcionar cotizaciones detalladas y personalizadas para cubrir las
-                            necesidades específicas de seguridad de tu empresa</p>
-                    </li>
+                <div class="service_item">
+                    <div class="service_item_icon">
+                        <img src="imagenes/solicitud-de-cotizacion.svg" alt="Cotizavción Personalizada">
+                    </div>
 
-                    <li>
-                        <h2> <span class="fa-solid fa-palette"></span> Servicio de bordado y serigrafiado</h2>
-                        <p>Ofrecemos el servicio de bordado y serigrafiado para personalizar tus overoles con el nombre
-                            de tu empresa o cualquier otro diseño que desees, agregando un toque profesional y único a
-                            tu equipo de trabajo</p>
-                    </li>
+                    <strong> Cotización personalizada </strong>
+                    <span>Cotizaciones rápidas y personalizadas, adaptadas a tus necesidades.</span>
+                </div>
 
-                    <li>
-                        <h2> <span class="fa-solid fa-truck-fast"></span> Entrega directamente a tu empresa</h2>
-                    </li>
-                </ul>
-            </section>
+                <div class="service_item">
+                    <div class="service_item_icon">
+                        <img src="imagenes/impresora-de-pantalla.svg" alt="Bordador y Serigrafía">
+                    </div>
 
-            <h1>Medios de contacto</h1>
-            <section class="contacto">
-                <a href="https://wa.me/5219213917777" target="_blank" id="whatsapp"> 
-                    <span class="fa-brands fa-whatsapp"></span> Whatsapp 
+                    <strong> Bordado & Serigrafiado </strong>
+                    <span>Agrega un toque profesional con bordado y serigrafía personalizada</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- <section class="brands">
+            <h2>Marcas</h2>
+        </section> -->
+
+        <section class="faq">
+
+            <h2>Preguntas Frecuentes</h2>
+            <p>FAQ</p>
+
+            <div class="faq_list">
+                <div class="faq_item">
+                    <h3>¿Qué tipos de equipo de protección personal ofrecen?</h3>
+                    <p>Ofrecemos una amplia gama de equipos de protección laboral como overoles, cascos, guantes,
+                        lentes, chalecos, calzado de seguridad y más, todos diseñados bajo normas de calidad para
+                        garantizar la seguridad, comodidad y productividad de tu equipo de trabajo.</p>
+                </div>
+
+                <div class="faq_item">
+                    <h3>¿Cómo puedo solicitar una cotización?</h3>
+                    <p>Es muy sencillo: solo contáctanos por WhatsApp o correo electrónico. Nuestro equipo te asesorará
+                        para identificar los productos adecuados y preparar una cotización personalizada según las
+                        necesidades de tu empresa, ya sea un pedido pequeño o una compra por volumen.</p>
+                </div>
+
+                <div class="faq_item">
+                    <h3>¿Se pueden personalizar los uniformes con el logo de mi empresa?</h3>
+                    <p>Claro, ofrecemos servicio de bordado y serigrafiado para dar una imagen profesional y única a tu
+                        equipo de trabajo.</p>
+                </div>
+
+                <div class="faq_item">
+                    <h3>¿Cuál es el tiempo de entrega de los pedidos?</h3>
+                    <p>El tiempo depende de la cantidad y tipo de productos, pero siempre buscamos garantizar rapidez y
+                        cumplimiento en las fechas acordadas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagenes/BlancoC.png" alt="CRUANPA Comercializadora">
+        <section class="contact_inf">
+            <h2>Contactanos</h2>
+            <div class="contact_list">
+                <a href="mailto:cruanpa.ventas@gmail.com" target="_blank">
+                    <img src="imagenes/social/email 1.svg" alt=""> cruanpa.ventas@gmail.com
                 </a>
 
-                <a href="https://www.facebook.com/profile.php?id=61550613068474" target="none" id="facebook">    
-                    <span class="fa-brands fa-facebook"></span> Facebook
+                <a href="https://wa.me/5219213917777" target="_blank"> <img src="imagenes/social/whatsapp 1.svg" alt="">
+                    921-391-7777</a>
+
+                <a href="https://www.facebook.com/profile.php?id=61550613068474" target="_blank">
+                    <img src="imagenes/social/facebook.svg" alt=""> Cruanpa comercializadora
                 </a>
 
                 <a href="https://www.instagram.com/cruanpa/?fbclid=IwZXh0bgNhZW0CMTAAAR2lttedQW94iwVgw1cXmix41uwa443F5U-UwCxAlYc95v8AhX0_LkFHt08_aem_Ac0F9HO-phra36SUHLpE8R6bUUAGkNSeS5j4duHN3zPD0PQCFp6sWlGp3ELXjgqX2pH0Zi-bxlbqNNIDCNA2eNt6"
-                    target="none" id="instagram"> 
-                    <span class="fa-brands fa-instagram"></span> Instagram
+                    target="_blank">
+                    <img src="imagenes/social/instagram.svg" alt=""> Cruanpa
                 </a>
+            </div>
 
-                <a href="mailto:cruanpa.ventas@gmail.com" target="_blank" id="email">
-                    <span class="fa-solid fa-envelope"></span> Correo Electronico
-                </a>
-
-            </section>
-
-            <h1>Catalogo de marcas</h1>
-            <section class="marcas">
-                <img src="imagenes/marcas/BYLACK.png" alt="BYLACK">
-                <img src="imagenes/marcas/3M.png" alt="3M">
-                <img src="imagenes/marcas/dermacare.png" alt="DermaCare">
-                <img src="imagenes/marcas/msa.png" alt="MSA">
-                <img src="imagenes/marcas/jyrsa.png" alt="JYRSA">
-                <img src="imagenes/marcas/vanvien.png" alt="VANVIEN">
-                <img src="imagenes/marcas/truper.png" alt="TRUPER">
-                <img src="imagenes/marcas/uvex.png" alt="UVEX">
-            </section>
-
-            <button id="btnImprimirPDF">Obtener PDF</button>
-            <script>
-                document.getElementById('btnImprimirPDF').addEventListener('click', function () {
-                    const options = {
-                        margin: 10,
-                        filename: 'CRUANPA.pdf',
-                        image: { type: 'jpeg', quality: 0.98 },
-                        html2canvas: { scale: 2 },
-                        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-                    };
-            
-                    const element = document.querySelector('.card');
-                    html2pdf().from(element).set(options).save();
-                });
-            </script>
-            
-        </div>
-    </main>
+            <p>Copyright © 2025 CRUANPA Comercializadora | Todos los derechos reservados | Designed & built by <a
+                    href="https://mllalonso.github.io/landing-pages-suite/" target="_blank">[Mikkel Llaven Alonso]</a>
+            </p>
+        </section>
+    </footer>
 </body>
+
 </html>
