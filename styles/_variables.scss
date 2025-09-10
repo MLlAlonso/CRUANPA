@@ -5,12 +5,13 @@ $white: #F9F9F9;
 $black: #2C2C2C;
 $gray-light: #C4C4C4;
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
 }
 
-h1{
+h1 {
     font-family: poppins;
     font-weight: bolder;
     color: $white;
@@ -18,17 +19,17 @@ h1{
     font-size: 3.125rem;
 }
 
-h2{
-    font-family: lexend deca;
-    font-weight: bold;
+h2 {
     color: $primary-color;
+    font-size: 2.2rem;
+    font-weight: bolder;
 }
 
-p{
+p {
     font-family: poppins;
     font-weight: 200;
 }
 
-span{
+span {
     color: $accent-color;
 }
